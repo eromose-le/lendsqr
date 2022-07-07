@@ -1,0 +1,16 @@
+.notFound {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 30vh;
+  border-radius: 4px;
+
+  .notFoundBtn {
+    border: 1px solid $backgroundGrey;
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+}

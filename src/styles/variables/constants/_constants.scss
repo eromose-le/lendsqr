@@ -1,0 +1,40 @@
+// colors
+// $background: #e5e5e5;
+$background: #f6f6f6;
+$white: #ffffff;
+$lightGreen: #39cdcc;
+$opacityGreen: #4cf9f92b;
+$darkBlue: #213f7d;
+$lightBlue: #545f7d;
+$opacityBlue: #21407d31;
+$red: #e4033b;
+$black: rgba(0, 0, 0, 0.8);
+$borderGrey: rgba(84, 95, 125, 0.15);
+$backgroundGrey: rgba(33, 63, 125, 0.1);
+$shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+
+// topography
+$fs-1: 2.5rem;
+$fs-2: 1.75rem;
+$fs-3: 1.625rem;
+$fs-4: 1.5rem;
+$fs-5: 1.375rem;
+$fs-6: 1rem;
+$fs-7: 1.125rem;
+$fs-8: 0.838rem;
+$fs-9: 0.8rem;
+$fs-10: 0.713rem;
+
+// weight
+
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+
+// @media (max-width: 700px) {
+//   $fs-1: 1rem;
+// }
+
+option {
+  background-color: $white;
+}

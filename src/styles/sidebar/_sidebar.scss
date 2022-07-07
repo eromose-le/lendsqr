@@ -1,0 +1,88 @@
+@import './section';
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+
+  .headerItemContainer {
+    @extend section;
+    padding-block: 30px;
+
+    .text {
+      cursor: pointer;
+      color: $darkBlue;
+      font-weight: $fw-500;
+      margin-right: 5px;
+
+      &:hover,
+      &active,
+      &focus {
+        color: $darkBlue;
+      }
+    }
+
+    &:hover {
+      border-left: 3px solid $lightGreen;
+      border-left-width: 5px;
+      transition: ease-in-out 0.2s;
+    }
+  }
+
+  .itemContainer {
+    @extend section;
+    margin-block: 10px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $opacityGreen;
+      border-left: 3px solid $lightGreen;
+      border-left-width: 5px;
+      color: $darkBlue;
+      font-weight: $fw-400;
+      transition: ease-in-out 0.2s;
+    }
+
+    .text {
+      color: $lightBlue;
+
+      &:hover,
+      &active,
+      &focus {
+        color: $darkBlue;
+      }
+    }
+  }
+
+  .title {
+    font-size: $fs-10;
+    text-transform: uppercase;
+    padding: 10px;
+
+    @media (max-width: 550px) {
+      font-size: 0.6rem;
+    }
+  }
+
+  .lastItem {
+    margin-block: 20px;
+    border-top: 2px solid $opacityBlue;
+  }
+
+  .logout {
+    border-top: 2px solid $opacityBlue;
+    margin-block: 30px;
+  }
+
+  @media (max-width: 370px) {
+    width: 100%;
+
+    .title {
+      display: none;
+    }
+
+    .itemContainer {
+      padding: 10px;
+    }
+  }
+}

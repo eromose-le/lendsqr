@@ -13,15 +13,18 @@
 
 - Filter Modal drop down
 - Sub Information Modal drop down
+- Pagination
 
 ## Routes
 
 `unAuthenticated` <br />
-/ -> login page
+
+- '/' -> login page
 
 `Authenticated` <br />
-/ -> Home page
-/user/:id -> Single User Dashboard page
+
+- '/' -> Home page
+- '/user/:id' -> Single User Dashboard page
 
 # Note
 

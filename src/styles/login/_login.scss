@@ -1,0 +1,166 @@
+// @import '../variables/constants/constants';
+// @import '../variables/reusable/reusable';
+
+.login {
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+
+  @media (max-width: 700px) {
+    padding-left: 20px;
+  }
+
+  .logoContainer {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+
+    img {
+      width: 70%;
+      height: 30%;
+    }
+
+    @media (max-width: 700px) {
+      left: 10%;
+
+      img {
+        width: 60%;
+      }
+    }
+  }
+
+  .left,
+  .right {
+    margin-top: -4rem;
+  }
+
+  .left {
+    flex: 1;
+    padding: 30px;
+
+    .loginBgImgContainer {
+      width: 100%;
+      @include flexCenter(column);
+
+      img {
+        object-fit: cover;
+        width: 80%;
+      }
+    }
+    @media (max-width: 700px) {
+      display: none;
+      .loginBgImgContainer {
+        display: none;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    background-color: $white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 5% 0 5%;
+    box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+
+    .formContainer {
+      // background-color: $background;
+      width: 100%;
+      padding-right: $fs-1;
+
+      .header {
+        line-height: $fs-1;
+
+        h1 {
+          font-size: $fs-1;
+          color: $darkBlue;
+        }
+
+        p {
+          font-size: $fs-8;
+        }
+
+        margin: $fs-2 0 $fs-1 0;
+
+        @media (max-width: 700px) {
+          line-height: $fs-1;
+
+          h1 {
+            font-size: $fs-3;
+          }
+
+          p {
+            font-size: $fs-8;
+          }
+
+          margin: $fs-4 0 $fs-2 0;
+        }
+      }
+
+      .inputContainer {
+        margin-block: $fs-2;
+        position: relative;
+        font-size: $fs-8;
+
+        input {
+          padding: 1em;
+          border: 2px solid $borderGrey;
+          border-radius: 5px;
+        }
+        input:-webkit-autofill {
+          padding: 1em;
+          border: 2px solid $borderGrey;
+          border-radius: 5px;
+          -webkit-box-shadow: 0 0 0px 1000px $white inset;
+          box-shadow: 0 0 0px 1000px $white inset;
+          -webkit-text-fill-color: $lightBlue !important;
+        }
+        input::placeholder {
+          color: $lightBlue;
+        }
+
+        span {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          @include flexCenter(column);
+          padding-inline: 15px;
+          color: $lightGreen;
+          font-weight: $fw-600;
+        }
+
+        @media (max-width: 700px) {
+          font-size: $fs-10;
+        }
+      }
+
+      .forgotPassword {
+        font-size: $fs-10;
+      }
+
+      button {
+        background-color: $lightGreen;
+        color: $white;
+        width: 100%;
+        margin-top: 40px;
+
+        @include flexCenter(row);
+        padding: 1em;
+        border-radius: 5px;
+        font-weight: $fw-600;
+
+        @media (max-width: 700px) {
+          font-size: $fs-10;
+        }
+      }
+    }
+  }
+}

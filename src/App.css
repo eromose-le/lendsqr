@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'AvenirNextLTProBold'; /*Can be any text*/
+  src: local('AvenirNextLTPro-Bold'),
+    url('./assets/fonts/AvenirNextLTPro-Bold.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'AvenirNextLTProRegular'; /*Can be any text*/
+  src: local('AvenirNextLTPro-Regular'),
+    url('./assets/fonts/AvenirNextLTPro-Regular.otf') format('otf');
+}
+
+::-webkit-scrollbar {
+  width: 2px !important;
+}
+::-webkit-scrollbar-track {
+  background-color: #21407d31;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #39cdcc;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Loader */
+.loaderStyle {
+  /* container */
+  background: #e5e5e5;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sl-loader-title > span {
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 5px;
+  margin-top: -10px;
+}

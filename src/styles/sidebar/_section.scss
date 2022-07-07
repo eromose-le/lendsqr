@@ -1,0 +1,40 @@
+@import '../variables/constants/constants';
+section {
+  display: flex;
+  align-items: center;
+  font-size: $fs-8;
+  font-weight: $fw-400;
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+
+  p {
+    margin-left: 10px;
+  }
+
+  span {
+    margin-left: 5px;
+  }
+
+  @media (max-width: 900px) {
+    p,
+    span {
+      font-size: $fs-10;
+    }
+  }
+
+  @media (max-width: 500px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px 10px 5px;
+    img {
+      width: 16px;
+      height: 16px;
+    }
+
+    .text,
+    span {
+      display: none;
+    }
+  }
+}

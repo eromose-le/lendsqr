@@ -1,0 +1,82 @@
+@import './variables/constants/constants';
+@import './variables/fonts/fonts';
+@import './variables/reusable/reusable';
+@import './layout/layout';
+@import './navbar/navbar';
+@import './login/login';
+@import './sidebar/sidebar';
+@import './dashboard/dashboard';
+@import './home/home';
+@import './notFound/notFound';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+  display: block;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+button {
+  text-align: left;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  outline-color: $borderGrey;
+}
+
+img {
+  height: auto;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+html {
+  font-family: $bodyFont;
+  color: $lightBlue;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $background;
+}
+
+.loadingGif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
